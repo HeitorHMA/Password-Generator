@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        PASSWORD GENERATOR
+    </div>
+    <div class="body">
+        <div class="container-input">
+        <div class="inputs">
+        <label for="passwordLength">Password length:</label>
+        <input type="number" class="passwordLength" id="passwordLength">
+        </div>
+        <div class="input">
+        <label for="includeLowerCase">Include lower case:</label>
+        <input type="checkbox" id="includeLowerCase">
+        </div>
+        <div class="input">
+        <label for="includeUpperCase">Include upper case:</label>
+        <input type="checkbox" id="includeUpperCase">
+        </div>
+        <div class="input">
+        <label for="includeNumbers">Include numbers:</label>
+        <input type="checkbox" id="includeNumbers">
+        </div>
+        <div class="input">
+        <label for="includeSimbols">Include simbols:</label>
+        <input type="checkbox" id="includeSimbols">
+        </div>
+        <div class="inputs" id="submitBtn">
+           <button type="button" onclick="getUserPassword()">Submit</button>
+        </div>
+    </div>
+        <div id="result" class="input">
+
+         </div>
+    </div>
+    <div class="footer">
+        &copy; Heitor Henrique &nbsp<span id="year"></span>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
